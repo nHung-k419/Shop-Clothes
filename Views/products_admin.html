@@ -1,0 +1,115 @@
+<h1 class="pt-4">Manage Products</h1>
+<div class="container d-flex p-2 bd-highlight">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Stt</th>
+            <th scope="col">Name Products</th>
+            <th scope="col">Images</th>
+            <th scope="col">Price</th>
+            <th scope="col">Details</th>
+            <th scope="col">id categories</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="table-data-categori render_products">
+            <img class="images" src="" alt="">
+           <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td><button>Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>      
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add New Products
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form_user">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name Product</label>
+            <input  type="text" class="form-control input-category" id="name" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Image </label>
+            <input  type="file" class="form-control input-category" id="image" placeholder="Enter Image">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Price</label>
+            <input  type="text" class="form-control input-category" id="price" placeholder="Enter Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Max Price</label>
+            <input  type="text" class="form-control input-category" id="maxprice" placeholder="Enter MaxPrice">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Details</label>
+            <input  type="text" class="form-control input-category" id="detail" placeholder="Enter Details">
+          </div>
+          <select id="select_product">
+            <option class="option_select" value="">Tất cả danh mục</option>
+            <!-- <option value="1">Danh mục 1</option> -->
+          </select>
+        </form>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary add-btn">Save changes</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ <!-- edit products -->
+<div class="modal fade" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Products</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="form">
+        <form class="form_user">
+          <div class="form-group input_name">
+            <label for="exampleInputEmail1">Name Product</label>
+            <input type="text" class="form-control input-category" id="exampleInputEmail1" placeholder="Enter Name">
+          </div>
+          <div class="form-group  ">
+            <label for="exampleInputEmail1">Image </label>
+            <input  type="file" accept=".jpg" class="form-control input-category" id="input_image" placeholder="Enter Image">
+          </div>
+          <div class="form-group input_price">
+            <label for="exampleInputEmail1">Price</label>
+            <input  type="text" class="form-control input-category" id="exampleInputEmail1" placeholder="Enter Price">
+          </div>
+          <div class="form-group input_detail">
+            <label for="exampleInputEmail1">Details</label>
+            <input  type="text" class="form-control input-category" id="exampleInputEmail1" placeholder="Enter Details">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary edit_save">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

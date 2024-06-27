@@ -1,0 +1,86 @@
+<h1 class="pt-4">Manage CateGories</h1>
+<div class="container d-flex p-2 bd-highlight">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Stt</th>
+            <th scope="col">Name Categories</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="table-data-categori render_category">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr> -->
+        </tbody>
+      </table>      
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add New Category
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Category</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form_user">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name Categories</label>
+            <input name="fullname" type="text" class="form-control input-category" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary add-btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- edit category -->
+<div class="modal fade" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Category</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form_user">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name Categories</label>
+            <input name="fullname" type="text" class="form-control edit-category" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary edit_save">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
